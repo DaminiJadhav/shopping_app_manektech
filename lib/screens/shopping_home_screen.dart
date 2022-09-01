@@ -164,7 +164,7 @@ class _ShoppingHomeScreenState extends State<ShoppingHomeScreen> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Expanded(
-                                            child: Text('${shoppingList![index].title!}')
+                                            child: Text(shoppingList![index].title!=null ? '${shoppingList![index].title!}' :"")
                                         ),
                                         GestureDetector(
                                           onTap: (){
